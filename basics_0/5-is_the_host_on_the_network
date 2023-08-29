@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Verify if an IP address was passed as an argument.
+# Check if an argument is provided
 if [ "$#" != 1 ]; then 
     echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
-    exit 
-fi
+    exit
 
-# If an IP address is passed will be Ping 5 times.
+fi
+# Ping the IP address 5 times
 ping -c 5 "$1"
